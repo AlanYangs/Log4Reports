@@ -3,19 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.yag.test.TestCase2">
-        <methods>
-          <include name="test2"/>
-          <include name="test"/>
-        </methods>
-      </class> <!-- com.yag.test.TestCase2 -->
       <class name="com.yag.test.TestCase1">
         <methods>
-          <include name="afterEachTest"/>
-          <include name="beforeEachTest"/>
+          <include name="test"/>
+          <include name="test2"/>
           <include name="beforeSuite"/>
-          <include name="afterEachClass"/>
-          <include name="beforeEachClass"/>
+          <include name="beforeClass"/>
         </methods>
       </class> <!-- com.yag.test.TestCase1 -->
     </classes>

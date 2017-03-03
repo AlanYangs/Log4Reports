@@ -5,10 +5,15 @@ import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-import com.yag.base.Configurations;
+import com.yag.base.BaseCase;
+import com.yag.base.LogConfig;
 import com.yag.utils.DateUtil;
 import com.yag.utils.EmailUtil;
-
+/**
+ * Created by yangangui on 2017/1/5.
+ * @author yangangui
+ *
+ */
 public class TestReport {
 	
 	public static int failureCount = 0;
@@ -36,15 +41,17 @@ public class TestReport {
 	}
 	
 	public void sendReport(){
+		String logPath = BaseCase.logConfig.getExtentLogPath();
+		String log4jPath = BaseCase.logConfig.getLog4jPath();
 		
 		String detail = "";
-		if(Configurations.logType == 0){
-			detail = "<iframe src=\"" + LogUtil.logPath + "\" height=\"80%\" width=\"100%\" frameborder=\"0\" scrolling =\"no\">" + 
-				"<a href=\"" + LogUtil.logPath + "\">您的浏览器版本太低，请点击这里访问页面内容</a>" +
+		if(LogConfig.logType == 0){
+			detail = "<iframe src=\"" + logPath + "\" height=\"80%\" width=\"100%\" frameborder=\"0\" scrolling =\"no\">" + 
+				"<a href=\"" + logPath + "\">您的浏览器版本太低，请点击这里访问页面内容</a>" +
 				"</iframe>";
 		}else{
-			detail = "<iframe src=\"" + LogUtil.log4jPath + "\" height=\"80%\" width=\"100%\" frameborder=\"0\" scrolling =\"no\">" + 
-					"<a href=\"" + LogUtil.log4jPath + "\">您的浏览器版本太低，请点击这里查看详情</a>" +
+			detail = "<iframe src=\"" + log4jPath + "\" height=\"80%\" width=\"100%\" frameborder=\"0\" scrolling =\"no\">" + 
+					"<a href=\"" + log4jPath + "\">您的浏览器版本太低，请点击这里查看详情</a>" +
 					"</iframe>" ;
 		}
 				
@@ -150,8 +157,8 @@ public class TestReport {
 				"</body>" +
 				"</html>";
 		
-		if(Configurations.logType == 1){
-			EmailUtil.sendMail(subject, content, recipients, LogUtil.log4jFolder + "\\output.log");
+		if(LogConfig.logType == 1){
+			EmailUtil.sendMail(subject, content, recipients, log4jPath);
 		}else{
 			EmailUtil.sendMail(subject, content, recipients);
 		}

@@ -1,115 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1506" started-at="2016-06-07T02:18:00Z" finished-at="2016-06-07T02:18:02Z">
+  <suite name="Default suite" duration-ms="1069" started-at="2017-03-03T07:54:18Z" finished-at="2017-03-03T07:54:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1506" started-at="2016-06-07T02:18:00Z" finished-at="2016-06-07T02:18:02Z">
+    <test name="Default test" duration-ms="1069" started-at="2017-03-03T07:54:18Z" finished-at="2017-03-03T07:54:19Z">
       <class name="com.yag.test.TestCase1">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.yag.test.TestCase1@48a97747]" name="beforeSuite" is-config="true" duration-ms="113" started-at="2016-06-07T10:18:00Z" finished-at="2016-06-07T10:18:00Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.yag.test.TestCase1@55a2e547]" name="beforeSuite" is-config="true" duration-ms="16" started-at="2017-03-03T15:54:18Z" finished-at="2017-03-03T15:54:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeEachClass()[pri:0, instance:com.yag.test.TestCase1@48a97747]" name="beforeEachClass" is-config="true" duration-ms="5" started-at="2016-06-07T10:18:00Z" finished-at="2016-06-07T10:18:00Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.yag.test.TestCase1@55a2e547]" name="beforeClass" is-config="true" duration-ms="119" started-at="2017-03-03T15:54:18Z" finished-at="2017-03-03T15:54:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeEachClass -->
-        <test-method status="PASS" signature="beforeEachTest()[pri:0, instance:com.yag.test.TestCase1@48a97747]" name="beforeEachTest" is-config="true" duration-ms="0" started-at="2016-06-07T10:18:00Z" finished-at="2016-06-07T10:18:00Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.yag.test.TestCase1@55a2e547]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-03-03T15:54:18Z" finished-at="2017-03-03T15:54:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="test()[pri:0, instance:com.yag.test.TestCase1@48a97747]" name="test" duration-ms="5" started-at="2016-06-07T10:18:00Z" finished-at="2016-06-07T10:18:00Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test()[pri:0, instance:com.yag.test.TestCase1@55a2e547]" name="test" duration-ms="0" started-at="2017-03-03T15:54:18Z" finished-at="2017-03-03T15:54:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:com.yag.test.TestCase1@48a97747]" name="afterEachTest" is-config="true" duration-ms="178" started-at="2016-06-07T10:18:00Z" finished-at="2016-06-07T10:18:00Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.yag.test.TestCase1@55a2e547]" name="afterMethod" is-config="true" duration-ms="196" started-at="2017-03-03T15:54:18Z" finished-at="2017-03-03T15:54:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test status=SUCCESS method=TestCase1.test()[pri:0, instance:com.yag.test.TestCase1@48a97747] output={null}]]]>
+                <![CDATA[[TestResult name=test status=SUCCESS method=TestCase1.test()[pri:0, instance:com.yag.test.TestCase1@55a2e547] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterEachTest -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.yag.test.TestCase1@48a97747]" name="test2" duration-ms="252" started-at="2016-06-07T10:18:00Z" finished-at="2016-06-07T10:18:01Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.yag.test.TestCase1@55a2e547]" name="test2" duration-ms="357" started-at="2017-03-03T15:54:18Z" finished-at="2017-03-03T15:54:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="beforeEachTest()[pri:0, instance:com.yag.test.TestCase1@48a97747]" name="beforeEachTest" is-config="true" duration-ms="0" started-at="2016-06-07T10:18:00Z" finished-at="2016-06-07T10:18:00Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.yag.test.TestCase1@55a2e547]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-03-03T15:54:18Z" finished-at="2017-03-03T15:54:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:com.yag.test.TestCase1@48a97747]" name="afterEachTest" is-config="true" duration-ms="256" started-at="2016-06-07T10:18:01Z" finished-at="2016-06-07T10:18:01Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.yag.test.TestCase1@55a2e547]" name="afterMethod" is-config="true" duration-ms="345" started-at="2017-03-03T15:54:18Z" finished-at="2017-03-03T15:54:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test2 status=SUCCESS method=TestCase1.test2()[pri:0, instance:com.yag.test.TestCase1@48a97747] output={null}]]]>
+                <![CDATA[[TestResult name=test2 status=SUCCESS method=TestCase1.test2()[pri:0, instance:com.yag.test.TestCase1@55a2e547] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterEachTest -->
-        <test-method status="PASS" signature="afterEachClass()[pri:0, instance:com.yag.test.TestCase1@48a97747]" name="afterEachClass" is-config="true" duration-ms="0" started-at="2016-06-07T10:18:01Z" finished-at="2016-06-07T10:18:01Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.yag.test.TestCase1@55a2e547]" name="afterClass" is-config="true" duration-ms="40" started-at="2017-03-03T15:54:19Z" finished-at="2017-03-03T15:54:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterEachClass -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.yag.test.TestCase1@48a97747]" name="afterSuite" is-config="true" duration-ms="1782" started-at="2016-06-07T10:18:02Z" finished-at="2016-06-07T10:18:03Z">
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.yag.test.TestCase1@55a2e547]" name="afterSuite" is-config="true" duration-ms="686" started-at="2017-03-03T15:54:19Z" finished-at="2017-03-03T15:54:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.yag.test.TestCase1 -->
-      <class name="com.yag.test.TestCase2">
-        <test-method status="PASS" signature="beforeEachClass()[pri:0, instance:com.yag.test.TestCase2@39852afc]" name="beforeEachClass" is-config="true" duration-ms="2" started-at="2016-06-07T10:18:01Z" finished-at="2016-06-07T10:18:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachClass -->
-        <test-method status="PASS" signature="beforeEachTest()[pri:0, instance:com.yag.test.TestCase2@39852afc]" name="beforeEachTest" is-config="true" duration-ms="0" started-at="2016-06-07T10:18:01Z" finished-at="2016-06-07T10:18:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="test()[pri:0, instance:com.yag.test.TestCase2@39852afc]" name="test" duration-ms="170" started-at="2016-06-07T10:18:01Z" finished-at="2016-06-07T10:18:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:com.yag.test.TestCase2@39852afc]" name="afterEachTest" is-config="true" duration-ms="233" started-at="2016-06-07T10:18:01Z" finished-at="2016-06-07T10:18:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test status=SUCCESS method=TestCase2.test()[pri:0, instance:com.yag.test.TestCase2@39852afc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEachTest -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.yag.test.TestCase2@39852afc]" name="test2" duration-ms="159" started-at="2016-06-07T10:18:01Z" finished-at="2016-06-07T10:18:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="beforeEachTest()[pri:0, instance:com.yag.test.TestCase2@39852afc]" name="beforeEachTest" is-config="true" duration-ms="0" started-at="2016-06-07T10:18:01Z" finished-at="2016-06-07T10:18:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:com.yag.test.TestCase2@39852afc]" name="afterEachTest" is-config="true" duration-ms="230" started-at="2016-06-07T10:18:01Z" finished-at="2016-06-07T10:18:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test2 status=SUCCESS method=TestCase2.test2()[pri:0, instance:com.yag.test.TestCase2@39852afc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEachTest -->
-        <test-method status="PASS" signature="afterEachClass()[pri:0, instance:com.yag.test.TestCase2@39852afc]" name="afterEachClass" is-config="true" duration-ms="0" started-at="2016-06-07T10:18:02Z" finished-at="2016-06-07T10:18:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEachClass -->
-      </class> <!-- com.yag.test.TestCase2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

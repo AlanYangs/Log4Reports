@@ -15,15 +15,19 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
-import com.yag.base.Configurations;
-
+import com.yag.base.LogConfig;
+/**
+ * Created by yangangui on 2017/1/5.
+ * @author yangangui
+ *
+ */
 public class EmailUtil {
 	private  Properties prop = new Properties();
 	private static  Session session;
 	private static  Transport ts;
-	private  static String host = Configurations.smtpHost;
-	private static  String username = Configurations.sender;
-	private  String password = Configurations.sendPassword;
+	private  static String host = LogConfig.smtpHost;
+	private static  String username = LogConfig.sender;
+	private  String password = LogConfig.sendPassword;
 	private static String recipients = "";//收件人列表
 	private static String subject = "this is maill subject";//邮件主题
 	private static String content = "this is maill content";//邮件内容
@@ -56,7 +60,9 @@ public class EmailUtil {
 			message = createSimpleMail(subject, content);
 			ts.sendMessage(message, message.getAllRecipients());		
 	        ts.close();
+	        System.out.println("send email finished.");
 		} catch (Exception e) {
+			System.err.println("send email failed.");
 			e.printStackTrace();
 		}      
     }
@@ -75,7 +81,9 @@ public class EmailUtil {
 			
 			ts.sendMessage(message, message.getAllRecipients());
 	        ts.close();
+	        System.out.println("send email finished.");
 		} catch (Exception e) {
+			System.err.println("send email failed.");
 			e.printStackTrace();
 		}      
     }

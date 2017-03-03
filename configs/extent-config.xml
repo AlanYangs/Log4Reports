@@ -3,17 +3,17 @@
     <configuration>
 		<!-- document encoding -->
 		<!-- defaults to UTF-8 -->
-		<encoding>GB2312</encoding>
+		<encoding>UTF-8</encoding>
 		
 		<!-- protocol for script and stylesheets -->
 		<!-- defaults to https -->
 		<protocol>https</protocol>
 		
         <!-- title of the document -->
-        <documentTitle>CPD Application Promote Test Reports</documentTitle>
+        <documentTitle>Log4Reports Reports</documentTitle>
         
         <!-- report name - displayed at top-nav -->
-        <reportName>Daily Automation Testing</reportName>
+        <reportName>Automation Testing Reports</reportName>
         
         <!-- report headline - displayed at top-nav, after reportHeadline -->
         <reportHeadline></reportHeadline>

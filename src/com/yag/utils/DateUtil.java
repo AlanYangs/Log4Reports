@@ -3,7 +3,11 @@ package com.yag.utils;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
+/**
+ * Created by yangangui on 2017/1/5.
+ * @author yangangui
+ *
+ */
 public class DateUtil {
 	
 	public static void main(String[] args){
