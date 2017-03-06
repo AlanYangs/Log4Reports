@@ -5,4 +5,4 @@ It's a framework of automation testing log and report
 
 2、框架jar包：
 
-version：&nbsp1.0.0&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="https://pan.baidu.com/s/1eRS9EmA">Log4Reports_1.0.0.jar</a>
+version： 1.0.0          <a href="https://pan.baidu.com/s/1eRS9EmA">Log4Reports_1.0.0.jar</a>
