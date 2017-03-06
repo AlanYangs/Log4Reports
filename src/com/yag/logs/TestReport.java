@@ -25,8 +25,8 @@ public class TestReport {
 	public static String startMsTime = "";
 	public static String endMsTime = "";
 
-	private static String recipients = "yangangui@meizu.com";
-	private static String subject = "×Ô¶¯»¯²âÊÔ±¨¸æ_" + DateUtil.getNow("yyyy-MM-dd");
+	private static String recipients = "alany@163.com";
+	private static String subject = "è‡ªåŠ¨åŒ–æµ‹è¯•æŠ¥å‘Š_" + DateUtil.getNow("yyyy-MM-dd");
 	private static String content ="";
 	
 	public TestReport(String recivers){
@@ -47,11 +47,11 @@ public class TestReport {
 		String detail = "";
 		if(LogConfig.logType == 0){
 			detail = "<iframe src=\"" + logPath + "\" height=\"80%\" width=\"100%\" frameborder=\"0\" scrolling =\"no\">" + 
-				"<a href=\"" + logPath + "\">ÄúµÄä¯ÀÀÆ÷°æ±¾Ì«µÍ£¬Çëµã»÷ÕâÀï·ÃÎÊÒ³ÃæÄÚÈİ</a>" +
+				"<a href=\"" + logPath + "\">æ‚¨çš„æµè§ˆå™¨ç‰ˆæœ¬å¤ªä½ï¼Œè¯·ç‚¹å‡»è¿™é‡Œè®¿é—®é¡µé¢å†…å®¹</a>" +
 				"</iframe>";
 		}else{
 			detail = "<iframe src=\"" + log4jPath + "\" height=\"80%\" width=\"100%\" frameborder=\"0\" scrolling =\"no\">" + 
-					"<a href=\"" + log4jPath + "\">ÄúµÄä¯ÀÀÆ÷°æ±¾Ì«µÍ£¬Çëµã»÷ÕâÀï²é¿´ÏêÇé</a>" +
+					"<a href=\"" + log4jPath + "\">æ‚¨çš„æµè§ˆå™¨ç‰ˆæœ¬å¤ªä½ï¼Œè¯·ç‚¹å‡»è¿™é‡ŒæŸ¥çœ‹è¯¦æƒ…</a>" +
 					"</iframe>" ;
 		}
 				
@@ -120,25 +120,25 @@ public class TestReport {
 					"</style>" +
 				"</head>" +
 				"<body>" +
-					//"<div id=\"header\"><h2><font color=\"#ffffff\">²âÊÔ½á¹û: "+ testResult() +"</font></h2></div>" +
+					//"<div id=\"header\"><h2><font color=\"#ffffff\">æµ‹è¯•ç»“æœ: "+ testResult() +"</font></h2></div>" +
 					"<div id=\"header\">" +
-						"<table style=\"background-color:#02a8f3;\"¡¡width=\"100%\"¡¡height=\"70px\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">" +
+						"<table style=\"background-color:#02a8f3;\"ã€€width=\"100%\"ã€€height=\"70px\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">" +
 						"<tr width=\"100%\" height=\"70px\" style=\"background-color:#02a8f3;\">" +
-							"<td width=\"15%\" height=\"70px\" align=\"left\"><font color=\"#FFFFFF\" size=5><b>²âÊÔ½á¹û</b>:<font></td>" +
+							"<td width=\"15%\" height=\"70px\" align=\"left\"><font color=\"#FFFFFF\" size=5><b>æµ‹è¯•ç»“æœ</b>:<font></td>" +
 							"<td width=\"20%\" height=\"70px\" align=\"left\"><div class=\"tag\"><div class=\"circle\"></div><font color=\"#FFFFFF\" size=6>&nbsp;"+ testResult() +"<font></div></td>" +
 							"<td width=\"65%\" height=\"70px\"></td>" +
 						"</tr></table>" +
 					"</div>" +
-					"<h3>²âÊÔ½á¹ûÍ³¼Æ£º</h3>" +
+					"<h3>æµ‹è¯•ç»“æœç»Ÿè®¡ï¼š</h3>" +
 					  "<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"margin:4px; border-color: #EFEFEF;\" border = \"1\">" +
-						"<th width=\"12%\">ÓÃÀı×ÜÊı</th>" +
+						"<th width=\"12%\">ç”¨ä¾‹æ€»æ•°</th>" +
 						"<th width=\"12%\">Success</th>" +
 						"<th width=\"12%\">Failure</th>" +
 						"<th width=\"12%\">Skiped</th>" +
 						"<th width=\"4%\" rowspan=\"3\" class=\"noborder\"></th>" +
-						"<th width=\"16%\" align=\"left\" class=\"totalTime\" ><font color=\"#ffffff\" size=\"3\">²âÊÔÓÃÊ±</font></th>" +
-						"<th width=\"16%\" align=\"left\" class=\"startTime\" ><font color=\"#ffffff\" size=\"3\">¿ªÊ¼Ê±¼ä</font></th>" +
-						"<th width=\"16%\"align=\"left\" class=\"endTime\" ><font color=\"#ffffff\" size=\"3\">½áÊøÊ±¼ä</font></th>" +
+						"<th width=\"16%\" align=\"left\" class=\"totalTime\" ><font color=\"#ffffff\" size=\"3\">æµ‹è¯•ç”¨æ—¶</font></th>" +
+						"<th width=\"16%\" align=\"left\" class=\"startTime\" ><font color=\"#ffffff\" size=\"3\">å¼€å§‹æ—¶é—´</font></th>" +
+						"<th width=\"16%\"align=\"left\" class=\"endTime\" ><font color=\"#ffffff\" size=\"3\">ç»“æŸæ—¶é—´</font></th>" +
 				        "<tr align=\"center\" valign=\"middle\" >" +
 							"<td><font color=\"#C1C1C1\">"+ caseCount +"</font></td>" +
 				            "<td><font color=\"#32CD32\">"+ successCount +"</font></td>" +
@@ -149,11 +149,11 @@ public class TestReport {
 							"<td rowspan=\"2\" align=\"right\" valign=\"bottom\" class=\"endTime\"><font color=\"#ffffff\" size=\"2\"><b>"+ endTime +"</b></font></td>" +
 				        "</tr>" +
 				        "<tr align=\"center\" valign=\"middle\">" +
-							"<td><font color=\"#565656\" size=\"3\"><b>Í¨¹ıÂÊ</b></font></td>" +
+							"<td><font color=\"#565656\" size=\"3\"><b>é€šè¿‡ç‡</b></font></td>" +
 							"<td colspan=\"3\" ><font color=\"#565656\">"+ testPassRate() +"</font></td>" +
 						"</tr>" +
 					"</table>" +
-					"<h3>²âÊÔ½á¹ûÏêÇé£º</h3>" + detail +	
+					"<h3>æµ‹è¯•ç»“æœè¯¦æƒ…ï¼š</h3>" + detail +	
 				"</body>" +
 				"</html>";
 		
@@ -189,7 +189,7 @@ public class TestReport {
 	
 	public static String testUsedTime(){
 		if(startMsTime.equals("") && endMsTime.equals("")){
-			return "0Ğ¡Ê±  0·Ö  0Ãë+0ºÁÃë";
+			return "0å°æ—¶  0åˆ†  0ç§’+0æ¯«ç§’";
 		}
 		SimpleDateFormat dfs = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 		long between = 0;
@@ -204,6 +204,6 @@ public class TestReport {
         long min = ((between / (60 * 1000)) - hour * 60);
         long s = (between / 1000 - hour * 60 * 60 - min * 60);
         long ms = (between - hour * 60 * 60 * 1000 - min * 60 * 1000 - s * 1000);
-		return hour + "Ğ¡Ê±  " + min + "·Ö  " + s + "Ãë+" + ms+ "ºÁÃë";
+		return hour + "å°æ—¶  " + min + "åˆ†  " + s + "ç§’+" + ms+ "æ¯«ç§’";
 	}
 }
