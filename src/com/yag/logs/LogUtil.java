@@ -43,9 +43,9 @@ public class LogUtil {
 	public LogUtil(LogConfig config, Object obj){
 		this.logConfig = config;
 		if(LogConfig.logType == 0){
+			report = new ExtentReports(config.getExtentLogPath(),false);
 			File configFile = new File(System.getProperty("user.dir") + "\\configs\\extent-config.xml");
 			if(configFile.exists()) {
-				report = new ExtentReports(config.getExtentLogPath(),false);
 				report.loadConfig(configFile);		
 			}		
 			testLog = report.startTest(String.valueOf(obj));
