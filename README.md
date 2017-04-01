@@ -2,9 +2,8 @@
 ### 框架说明（Description）：
 It's a framework of automation testing log and report
 
-<<<<<<< HEAD
 框架详情及使用方式可以参考博客(more details)：http://www.jianshu.com/p/2c3fd46e2357
-=======
+
 1、框架详情及使用方式可以参考博客(more details)：http://www.jianshu.com/p/2c3fd46e2357
 
 2、框架jar包：
@@ -108,4 +107,7 @@ public class TestCase1 extends BaseCase{
     }
 }
 ```
->>>>>>> origin/master
+### 效果（Show）：
+![image](https://github.com/AlanYangs/Log4Reports/tree/master/readme-img/1.png)
+![image](https://github.com/AlanYangs/Log4Reports/tree/master/readme-img/2.png)
+![image](https://github.com/AlanYangs/Log4Reports/tree/master/readme-img/3.png)
