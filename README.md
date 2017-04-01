@@ -108,8 +108,8 @@ public class TestCase1 extends BaseCase{
 }
 ```
 ### 效果（Show）：
-![image](https://github.com/AlanYangs/Log4Reports/tree/master/readme-img/1.png)
+![image](readme-img/1.png)
 
-![image](https://github.com/AlanYangs/Log4Reports/tree/master/readme-img/2.png)
+![image](readme-img/2.png)
 
-![image](https://github.com/AlanYangs/Log4Reports/tree/master/readme-img/3.png)
+![image](readme-img/3.png)
