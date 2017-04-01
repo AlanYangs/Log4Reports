@@ -1,4 +1,5 @@
 # Log4Reports
+### 框架说明（Description）：
 It's a framework of automation testing log and report
 
 1、框架详情及使用方式可以参考博客(more details)：http://www.jianshu.com/p/2c3fd46e2357
@@ -7,8 +8,8 @@ It's a framework of automation testing log and report
 
 version 1.0.0： <a href="https://pan.baidu.com/s/1i4Eq0SX">Log4Reports_1.0.0.jar</a>
 
-#使用示例（Demo）：
-#######1> 创建测试类继承Log4Reports框架的BaseCase类，并实现initConfig()方法：
+### 使用示例（Demo）：
+###### 1> 创建测试类继承Log4Reports框架的BaseCase类，并实现initConfig()方法：
 ```
 public class TestCase1 extends **BaseCase** {
     ……
@@ -29,7 +30,7 @@ public class TestCase1 extends **BaseCase** {
     }
 }
 ```
-######2> 如果需要使用TestNG的@BeforeClass（BaseCase中使用的注解包括：@BeforeSuite、@AfterSuite、@BeforeClass、@AfterClass、@BeforeMethod、@AfterMethod 这6个）等注解时，需要覆写这些方法时先调用父类对应方法：
+###### 2> 如果需要使用TestNG的@BeforeClass（BaseCase中使用的注解包括：@BeforeSuite、@AfterSuite、@BeforeClass、@AfterClass、@BeforeMethod、@AfterMethod 这6个）等注解时，需要覆写这些方法时先调用父类对应方法：
 ```
     @BeforeClass
     public void beforeClass() {
@@ -49,7 +50,7 @@ public class TestCase1 extends **BaseCase** {
 
     /** 不是上述的6个注解，不用调用父类的方法 **/
 ```        
-######3>使用@Test注解编写测试方法：
+###### 3>使用@Test注解编写测试方法：
 ```
 public class TestCase1 extends BaseCase{
     private int flag = 0;
