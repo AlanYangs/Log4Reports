@@ -8,6 +8,7 @@ It's a framework of automation testing log and report
 
 version 1.0.0： <a href="https://pan.baidu.com/s/1i4Eq0SX">Log4Reports_1.0.0.jar</a>
 
+
 ### 使用示例（Demo）：
 ###### 1> 创建测试类继承Log4Reports框架的BaseCase类，并实现initConfig()方法：
 ```
