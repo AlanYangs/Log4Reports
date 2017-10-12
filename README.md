@@ -20,7 +20,7 @@ public class TestCase1 extends **BaseCase** {
     @Override
     public void initConfig() {
         // TODO Auto-generated method stub
-        logConfig = new LogConfig.Builder("\\\\172.0.0.1\\SharedFolder") //设置共享目录
+        logConfig = new LogConfig.Builder("\\\\127.0.0.1\\SharedFolder") //设置共享目录
         .setLogType(0)      //设置日志类型
         .setRetryTimes(1) //设置失败重跑次数
         .setSmtpHost("smtp.163.com") //设置发送邮箱的smtp host
